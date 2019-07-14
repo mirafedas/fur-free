@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header-logo, #about-us-img, #about-us-logo, #infographics {
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4dc1b8;
+    height: 100px;
+}
+
+#header-logo {
+    width: 90px;
+    height: 80px;
+    padding-right: 10px;
+}
+
+#header-logo-motto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 495px;
+}
+
+#header-logo-motto > p {
+    width: 124px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+#header-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+}
+
+nav > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+nav > a:last-child {
+    display: flex;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#retailers-number {
+    display: flex;
+    color: #ffffff;
+    background-color: #000000;
+    width: 80px;
+    height: 22px;
+    margin-top: 10px;
+    align-content: center;
+    font-size: 18px;
+    justify-content: center;
+
+}
+
+#header-right > div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#main-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/01/31/14/panda-bamboo.jpg);
+    color: #ffffff;
+    height: 500px;
+    padding: 20px;
+    padding-left: 150px;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 30px;
+    font-size: 71px;
+}
+
+#main-picture > p {
+    align-self: flex-start;
+    width: 400px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+#learn-more-btn {
+    align-self: flex-start;
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #E96A47;
+    background:linear-gradient(to bottom, #E96A47 20%, #BD573B);
+    border-radius: 5px;
+    height: 75px;
+    width: 300px;
+    font-size: 20px;
+    outline: none;
+    box-shadow: none;
+}
