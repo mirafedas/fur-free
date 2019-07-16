@@ -1,11 +1,21 @@
+@font-face {
+    font-family: SegoeUI;
+    src: url(fonts/SegoeUI.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: SegoeUI;
 }
 
-#header-logo, #about-us-img, #about-us-logo, #infographics {
-    width: 50px;
-    height: 50px;
+section, header {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+button:hover {
+    transform: scale(1.1) perspective(1px);
 }
 
 header {
@@ -17,29 +27,53 @@ header {
 }
 
 #header-logo {
-    width: 90px;
-    height: 80px;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 #header-logo-motto {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 495px;
-}
-
-#header-logo-motto > p {
-    width: 124px;
-    font-size: 20px;
-    line-height: 25px;
+    flex-grow: 2;
 }
 
 #header-right {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 800px;
+    flex-grow: 1;
+}
+
+#header-right > div {
+    width: 80px;
+}
+
+#header-right > div:first-child {
+    text-align: center;
+}
+
+#retailers-number {
+    display: flex;
+    align-self: center;
+    color: #ffffff;
+    background-color: #000000;
+    width: 80px;
+    height: 24px;
+    margin-top: 10px;
+    align-content: center;
+    font-size: 18px;
+    justify-content: center;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+#header-right > div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 68px;
+    font-family: 'Roboto Slab', serif;
 }
 
 nav {
@@ -57,7 +91,11 @@ nav > a {
 
 nav > a:hover {
     color: #ffffff;
-    text-decoration: underline;
+    border-bottom: 1px solid #ffffff;
+}
+
+nav > a > span {
+    margin-left: 10px;
 }
 
 nav > a:last-child {
@@ -68,47 +106,21 @@ nav > a:last-child {
     padding: 5px;
 }
 
-#retailers-number {
-    display: flex;
-    color: #ffffff;
-    background-color: #000000;
-    width: 80px;
-    height: 22px;
-    margin-top: 10px;
-    align-content: center;
-    font-size: 18px;
-    justify-content: center;
-
-}
-
-#header-right > div {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-}
-
 #main-picture {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/01/31/14/panda-bamboo.jpg);
+    background-image: url(img/fox1.png);
+    background-size: cover;
     color: #ffffff;
-    height: 500px;
-    padding: 20px;
-    padding-left: 150px;
-}
-
-h1 {
-    margin-top: 0px;
-    padding-top: 30px;
-    font-size: 71px;
+    height: 600px;
 }
 
 #main-picture > p {
     align-self: flex-start;
     width: 400px;
-    font-size: 25px;
-    margin-bottom: 50px;
+    font-size: 24px;
+    margin-bottom: 65px;
 }
 
 #learn-more-btn {
@@ -116,11 +128,262 @@ h1 {
     color: #ffffff;
     border-color: #ffffff;
     background-color: #E96A47;
-    background:linear-gradient(to bottom, #E96A47 20%, #BD573B);
+    background: linear-gradient(180deg, #F2704C 0%, #B85033 100%);
     border-radius: 5px;
     height: 75px;
     width: 300px;
     font-size: 20px;
     outline: none;
     box-shadow: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#about-us > h2 {
+    margin-top: 45px;
+    width: 130px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h2:hover {
+    border-bottom: 2px solid #4dc1b8;
+}
+
+#about-us-bottom > span > i {
+    color: #9B9B9B;
+}
+
+#about-us-bottom > span > i:last-child {
+    transform: rotate(90deg);
+}
+
+#about-us-bottom > span:first-of-type {
+    width: 230px;
+}
+
+#about-us-content {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#about-us-content > p {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+#about-us-img {
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+#about-us-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+#brands > h2 {
+    width: 115px;
+}
+
+#brands-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F2F1F1;
+    height: 110px;
+    margin-bottom: 40px;
+}
+
+#brands-nav > select {
+    height: 40px;
+    width: 150px;
+    outline: none;
+    border: 2px solid #4dc1b8;
+    font-family: SegoeUI;
+    font-size: 16px;
+}
+
+#search-field-brands {
+    display: flex;
+}
+
+#search-field-brands > input {
+    height: 40px;
+    border: 2px solid #4dc1b8;
+    font-size: 18px;
+    outline: none;
+    font-family: SegoeUI;
+    font-size: 16px;
+}
+
+#search-field-brands > i {
+    color:  #ffffff;
+    background-color: #4dc1b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#brands > div > button {
+    border: 2px solid #4dc1b8;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    font-family: SegoeUI;
+    font-size: 16px;
+}
+
+#brands > div:last-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+#brands-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-logo {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 40px;
+}
+
+.brands-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#why-without-fur {
+    display: flex;
+    flex-direction: column;
+}
+
+#why-without-fur > h2 {
+    width: 255px;
+}
+
+#why-without-fur > img {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#join-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/fox.png);
+    /* background-image: url(img/fox.png); */
+    background-size: cover;
+    height: 500px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#join-us-btn {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #E96A47;
+    background: linear-gradient(180deg, #F2704C 0%, #B85033 100%);
+    border-radius: 5px;
+    height: 75px;
+    width: 300px;
+    font-size: 20px;
+    outline: none;
+    box-shadow: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E4E4E4;
+    height: 350px;
+}
+
+#contact-us > form > div > div > input  {
+    height: 40px;
+    width: 450px;
+    border: 2px solid #4dc1b8;
+    outline: none;
+    font-family: SegoeUI;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#contact-us > form > div > textarea {
+    height: 135px;
+    width: 750px;
+    border: 2px solid #4dc1b8;
+    outline: none;
+    font-family: SegoeUI;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+#send-email-btn {
+    border: 2px solid #4dc1b8;
+    outline: none;
+    height: 40px;
+    width: 210px;
+    font-family: SegoeUI;
+    font-size: 16px;
+    background: linear-gradient(180deg, #F2F2F2 0%, #E4E4E4 100%);
+    border: 1px solid #4DC0B8;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.195772), inset 0px 2px 0px #FFFFFF;
+    border-radius: 4px;
+}
+
+footer {
+    display: flex;
+    background-color: #4A4A4A;
+    color: #ffffff;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > :first-child {
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: space-between;
+}
+
+form > :first-child > div {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    justify-content: space-between;
+}
+
+#send-email-btn {
+    margin: 25px;
+}
+
+#social-networks {
+    display: flex;
+    justify-content: space-between;
 }

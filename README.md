@@ -1,1 +1,1 @@
-# fur-free
+This is a website for a Fur Free Retailer campaign leaded by Open Cages UA.
