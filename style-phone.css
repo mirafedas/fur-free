@@ -10,170 +10,94 @@ body {
 }
 
 section, header {
-    padding-left: 10vw;
-    padding-right: 10vw;
-}
-
-button:hover {
-    transform: scale(1.1) perspective(1px);
+    padding-left: 0;
+    padding-right: 0;
 }
 
 header {
     display: flex;
-    height: 100px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    align-items: center;
+    justify-content: space-around;
     background-color: #4dc1b8;
-}
-
-#menu-for-phone {
-    display: none;
-}
-
-#header-logo {
-    margin-right: 10px;
+    height: 100px;
 }
 
 #header-right {
-    display: flex;
-    align-items: center;
-    width: 100%;
+    display: none;
 }
 
-#header-right > div {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    width: 80px;
-}
-
-#header-right > div:first-child {
-    text-align: center;
-}
-
-#retailers-number {
-    display: flex;
-    align-self: center;
-    align-content: center;
-    justify-content: center;
-    width: 80px;
-    height: 24px;
-    margin-top: 10px;
-    color: #ffffff;
-    background-color: #000000;
-    font-size: 18px;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
-}
-
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-nav > a {
-    margin: 5px;
-    color: #000000;
-    font-size: 17px;
-    text-decoration: none;
-}
-
-nav > a:hover {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
-}
-
-nav > a > span {
-    margin-left: 10px;
-}
-
-nav > a:last-child {
-    display: flex;
-    align-items: center;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    padding: 5px;
+.fa-bars:before {
+    font-size: 40px;
 }
 
 #main-picture {
     display: flex;
     flex-direction: column;
-    height: 600px;
-    width: 100%;
+    align-items: center;
     background-image: url(img/fox1.png);
     background-repeat: no-repeat;
+    background-position: -620px 30px;
     color: #ffffff;
+    height: 600px;
 }
 
 #main-picture > h1 {
-    font-size: calc(26px + 2.5vw);
-    font-family: 'Roboto Slab', serif;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+    color: #fff;
+    background-color: #000;
+    font-size: calc(12px + 2.5vw);
 }
 
 #main-picture > p {
-    align-self: flex-start;
-    max-width: 35vw;
-    min-width: 330px;;
-    margin-bottom: 65px;
-    font-size: calc(12px + 1.5vw);
+    width: 330px;
+    align-self: center;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 #learn-more-btn {
-    align-self: flex-start;
+    align-self: center;
     color: #ffffff;
     border-color: #ffffff;
     background-color: #E96A47;
     background: linear-gradient(180deg, #F2704C 0%, #B85033 100%);
     border-radius: 5px;
-    height: 75px;
-    width: 300px;
-    font-size: 20px;
+    height: 35px;
+    width: 200px;
+    font-size: 16px;
     outline: none;
     box-shadow: none;
     font-weight: bold;
     cursor: pointer;
 }
 
-#about-us > h2 {
-    margin-top: 45px;
-    width: 130px;
+#wrapper-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#about-us {
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 h2:hover {
     border-bottom: 2px solid #4dc1b8;
 }
 
-#about-us-bottom {
-    flex-wrap: wrap;
-}
-
-#about-us-bottom > span > i {
-    color: #9B9B9B;
-}
-
-#about-us-bottom > span > i:last-child {
-    transform: rotate(90deg);
-}
-
-#about-us-bottom > span:first-of-type {
-    width: 230px;
-}
-
-#about-us-content {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-#about-us-content > p {
-    font-size: 24px;
-    margin-top: 5px;
+#about-us > h2 {
+    margin-top: 35px;
+    margin-bottom: 0px;
+    width: 90px;
 }
 
 #about-us-img {
@@ -183,32 +107,45 @@ h2:hover {
 
 #about-us-bottom {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    font-size: 18px;
+    justify-content: space-around;
+    height: 250px;
+}
+
+#about-us-bottom > img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#about-us-bottom > span {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: space-around;
+    height: 50px;
+}
+
+#about-us-bottom > span > div > i {
+    color: #9B9B9B;
+}
+
+#about-us-bottom > span > div:last-of-type > i {
+    transform: rotate(90deg);
 }
 
 #brands > h2 {
-    width: 115px;
+    width: 80px;
 }
 
 #brands-nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
     background-color: #F2F1F1;
     height: 110px;
     margin-bottom: 40px;
-}
-
-#brands-nav > select {
-    height: 40px;
-    width: 150px;
-    outline: none;
-    border: 2px solid #4dc1b8;
-    font-family: SegoeUI;
-    font-size: 16px;
 }
 
 #search-field-brands {
@@ -217,10 +154,11 @@ h2:hover {
 
 #search-field-brands > input {
     height: 40px;
+    width: 270px;
     border: 2px solid #4dc1b8;
     outline: none;
     font-family: SegoeUI;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #search-field-brands > i {
@@ -232,6 +170,15 @@ h2:hover {
     height: 40px;
     width: 40px;
     cursor: pointer;
+}
+
+#brands-nav > select {
+    height: 40px;
+    width: 150px;
+    outline: none;
+    border: 2px solid #4dc1b8;
+    font-family: SegoeUI;
+    font-size: 16px;
 }
 
 #brands > div > button {
@@ -260,26 +207,21 @@ h2:hover {
     min-height: 160px;
     margin-bottom: 40px;
     flex: 1;
-    margin: 10px;
+    margin: 10px;;
 }
 
 .brands-row {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-}
-
-#why-without-fur {
-    display: flex;
-    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
 }
 
 #why-without-fur > h2 {
-    width: 255px;
+    width: 170px;
 }
 
 #why-without-fur > img {
-    min-width: 330px;
     width: 100%;
 }
 
@@ -287,12 +229,18 @@ h2:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/fox.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/fox-big.png);
+    background-color: #000000;
     background-size: cover;
     height: 500px;
     font-size: 24px;
     color: #ffffff;
+    padding: 10px;
+    background-repeat: no-repeat;
+}
+
+#join-us > h5 {
+    text-align: center;
 }
 
 #join-us-btn {
@@ -301,13 +249,12 @@ h2:hover {
     background-color: #E96A47;
     background: linear-gradient(180deg, #F2704C 0%, #B85033 100%);
     border-radius: 5px;
-    height: 75px;
-    width: 300px;
+    height: 60px;
+    width: 215px;
     font-size: 20px;
     outline: none;
     box-shadow: none;
     font-weight: bold;
-    cursor: pointer;
 }
 
 #contact-us {
@@ -315,31 +262,35 @@ h2:hover {
     flex-direction: column;
     align-items: center;
     background-color: #E4E4E4;
-    min-height: 350px;
+    height: 415px;
+}
+
+#contact-us > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #contact-us > form > div > div > input  {
     height: 40px;
-    width: 450px;
+    width: 250px;
     border: 2px solid #4dc1b8;
     outline: none;
     font-family: SegoeUI;
     font-size: 16px;
     padding: 10px;
-}
-
-#contact-us > form > div > div {
     margin-bottom: 20px;
 }
 
 #contact-us > form > div > textarea {
     height: 135px;
-    width: 450px;
+    width: 250px;
     border: 2px solid #4dc1b8;
     outline: none;
     font-family: SegoeUI;
     font-size: 16px;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 #send-email-btn {
@@ -355,6 +306,19 @@ h2:hover {
     border-radius: 4px;
 }
 
+#contact-us > form > div {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-us > form > div > div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
 footer {
     display: flex;
     background-color: #4A4A4A;
@@ -364,34 +328,4 @@ footer {
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form > :first-child {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 150px;
-    justify-content: center;
-    margin-right: 150px;
-}
-
-form > :first-child > div {
-    display: flex;
-    flex-direction: column;
-    height: 160px;
-    justify-content: space-between;
-}
-
-#send-email-btn {
-    margin: 25px;
-}
-
-#social-networks {
-    display: flex;
-    justify-content: space-between;
 }
