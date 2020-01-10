@@ -11,52 +11,74 @@
     <title>Fur Free Retail</title>
 </head>
 <body>
-    <header>
-        <div id="header-logo-motto">
-            <img src="img/fur-free_retail_ukr.png" alt="Лого з зображенням лисиці" id="header-logo"/>
+    <header class="header">
+        <div>
+            <img src="img/fur-free_retail_ukr.png" alt="Лого з зображенням лисиці" class="header-logo"/>
         </div>
-
-        <div id="menu-for-phone"><i class="fas fa-bars"></i></div>
-
-        <div id="header-right">
-            <nav>
-                <a href="#about-us">ПРО НАС</a>
-                <a href="#brands">БРЕНДИ</a>
-                <a href="#why-without-fur">ЧОМУ БЕЗ ХУТРА?</a>
-                <a href="#join-us">
+        <div class="mobile-menu">
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="menu">
+                <nav class="header-right__nav">
+                    <a href="#about-us" class="header-right__nav__link">ПРО НАС</a>
+                    <a href="#brands" class="header-right__nav__link">БРЕНДИ</a>
+                    <a href="#why-without-fur" class="header-right__nav__link">ЧОМУ БЕЗ ХУТРА?</a>
+                    <a href="#join-us" class="header-right__nav__link">
+                        ПРИЄДНАТИСЯ
+                        <span class="header-right__nav__icon"><i class="fas fa-share-square"></i></span>
+                    </a>
+                </nav>
+                <div class="header-right__retailers">
+                    <div class="header-right__retailers__text">Кількість ритейлерів</div>
+                    <div class="retailers-number">
+                        1003
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+            <nav class="header-right__nav">
+                <a href="#about-us" class="header-right__nav__link">ПРО НАС</a>
+                <a href="#brands" class="header-right__nav__link">БРЕНДИ</a>
+                <a href="#why-without-fur" class="header-right__nav__link">ЧОМУ БЕЗ ХУТРА?</a>
+                <a href="#join-us" class="header-right__nav__link">
                     ПРИЄДНАТИСЯ
-                    <span><i class="fas fa-share-square"></i></span>
+                    <span class="header-right__nav__icon"><i class="fas fa-share-square"></i></span>
                 </a>
             </nav>
-
-            <div>
-                <div id="retailers-number-text">Кількість ритейлерів</div>
-                <div id="retailers-number">
+            <div class="header-right__retailers">
+                <div class="header-right__retailers__text">Кількість ритейлерів</div>
+                <div class="retailers-number">
                     1003
                 </div>
             </div>
         </div>
     </header>
-
-        <section id="main-picture">
-            <h1>ЗАЛИШИ ХУТРО В МИНУЛОМУ</h1>
-            <p>From this moment on, choose not to let your past dictate your future. What is gone is gone - forever.</p>
-            <button id="learn-more-btn">
-                ДІЗНАТИСЯ БІЛЬШЕ
-            </button>
-        </section>
-        
-    <div id="wrapper-container">
-        <section id="about-us">
-                <h2>ПРО НАС</h2>
-                <div id="about-us-content">
-                    <p>
+    <section class="main-picture-section">
+        <h1 class="main-picture__heading">ЗАЛИШИ ХУТРО В МИНУЛОМУ</h1>
+        <p class="main-picture__text">From this moment on, choose not to let your past dictate your future. What is gone is gone - forever.</p>
+        <button class="learn-more-btn">
+            ДІЗНАТИСЯ БІЛЬШЕ
+        </button>
+    </section>
+    <div class="wrapper">
+        <section class="about-us">
+                <h2 class="about-us__heading">ПРО НАС</h2>
+                <div class="about-us__content">
+                    <p class="about-us__content__text">
                         Відкриті Клітки були створені в Україні у 2017-му році в межах міжнародної ініціативи зі зміцнення захисту прав тварин, що перебувають на промислових фермах. Ми віримо, що кожній людині притаманна чутливість до страждання тварин. Віримо, що через показ того, як насправді виглядає промислове тваринництво, ми можемо розбудити цю чутливість та змінити долю тварин, замкнених на фермах. Ми прагнемо запровадити систематичні зміни в суспільстві, які, зрештою, призведуть до того, що тварини будуть вільними.
                     </p>
-                    <img src="img/fox-feeding.png" alt="Рука, яка годує лисицю" id="about-us-img"/>
+                    <img
+                        src="img/fox-feeding.png"
+                        alt="Рука, яка годує лисицю"
+                        class="about-us__img"
+                    />
                 </div>
-                <div id="about-us-bottom">
-                    <img src="img/OC-logo.png" alt="Лого Відкритих кліток" id="about-us-logo"/>
+                <div class="about-us__bottom">
+                    <img
+                        src="img/OC-logo.png"
+                        alt="Лого Відкритих кліток"
+                        id="about-us-logo"
+                    />
                     <span>
                         <b>Катерина Бєлкіна</b> - голова ГО "Відкриті клітки Україна"
                     </span>
@@ -72,33 +94,32 @@
                     </span>
                 </div>
         </section>
-
-        <section id="brands">
-            <h2>БРЕНДИ</h2>
-            <div id="brands-nav">
-                <div id="search-field-brands">
+        <section class="brands">
+            <h2 class="brands__heading">БРЕНДИ</h2>
+            <div class="brands__nav">
+                <div class="brands__search">
                     <input type="search" 
-                    id="brands-search" 
+                    class="brands__search__input" 
                     name="search" 
                     aria-label="Search through brands"
                     >
-                    <i class="fas fa-search"></i>
+                    <i class="brands__search__icon fas fa-search"></i>
                 </div>
-            
-
-                <select name="countries">
-                    <option value="" selected disabled hidden>Країна...</option>
-                    <option value="Ukraine">Україна</option>
-                    <option value="Russia">Росія</option>
-                    <option value="Poland">Польща</option>
-                    <option value="Danmark">Данія</option>
-                </select>
-
-                <select name="sorting-options">
-                    <option value="" selected disabled hidden>Сортувати за...</option>
-                    <option value="ascending">ascending</option>
-                    <option value="descending">descending</option>
-                </select>
+                <div class="brands__select-wrapper">
+                    <select name="countries" class="brands__select">
+                        <option value="" selected disabled hidden>Країна...</option>
+                        <option value="Ukraine">Україна</option>
+                        <option value="Russia">Росія</option>
+                        <option value="Poland">Польща</option>
+                        <option value="Danmark">Данія</option>
+                    </select>
+    
+                    <select name="sorting-options" class="brands__select">
+                        <option value="" selected disabled hidden>Сортувати за...</option>
+                        <option value="ascending">ascending</option>
+                        <option value="descending">descending</option>
+                    </select>
+                </div>
             </div>
             <div id="brands-container">
                     <img src="img/Rectangle-7.png" alt="Приклад-лого-бренду" class="brand-logo"/>
@@ -117,44 +138,52 @@
                     <img src="img/Rectangle-7.png" alt="Приклад-лого-бренду" class="brand-logo"/>
                     <img src="img/Rectangle-7.png" alt="Приклад-лого-бренду" class="brand-logo"/>
             </div>
-            <div>
-                <button id="show-more">Показати більше</button>
+            <div class="brands__btn-wrapper">
+                <button class="show-more-btn">Показати більше</button>
             </div>
         </section>
-
-        <section id="why-without-fur">
-                <h2>ЧОМУ БЕЗ ХУТРА?</h2>
-                <img src="img/FUR_Free_infographic_ukr.png" alt="Інфографіка" />
+        <section class="why-without-fur">
+                <h2 class="why-without-fur__heading">ЧОМУ БЕЗ ХУТРА?</h2>
+                <img
+                    src="img/FUR_Free_infographic_ukr.png"
+                    alt="Інфографіка"
+                    class="why-without-fur__image"
+                />
         </section>
-
-        <section id="join-us">
-                <h5>
+        <section class="join-us">
+                <h5 class="join-us__heading">
                     From this moment on, choose not to let your past dictate your future. What is gone is gone - forever.
                 </h5>
-                <button id="join-us-btn">ПРИЄДНАТИСЯ</button>
+                <button class="join-us__btn">ПРИЄДНАТИСЯ</button>
         </section>
-
-        <section id="contact-us">
-            <h2>ЗАЛИШИЛИСЬ ПИТАННЯ?</h2>
-            <form>
-                <div>
-                    <div>
-                        <input type="text" placeholder="Імʼя">
-                        <input type="email" placeholder="Email">
+        <section class="contact-us">
+            <h2 class="contact-us__heading">ЗАЛИШИЛИСЬ ПИТАННЯ?</h2>
+            <form class="contact-us__form">
+                <div class="contact-us__form__inputs">
+                    <div class="contact-us__form__inputs-wrapper">
+                        <input
+                            type="text"
+                            placeholder="Імʼя"
+                            class="contact-us__form__input"
+                        >
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            class="contact-us__form__input"
+                        >
                     </div>            
-                    <textarea placeholder="Повідомлення"></textarea>
+                    <textarea class="contact-us__form__textarea" placeholder="Повідомлення"></textarea>
                 </div>          
-                <button id="send-email-btn">Відправити повідомлення</button>
+                <button class="send-email-btn">Відправити повідомлення</button>
             </form>         
         </section>
-
-        <footer>
+        <footer class="footer">
             <div>
                 <b>Відкриті клітки</b><br>
                 Copyright &#9400; 2019
             </div>
-            <div id="social-networks">
-                Insert likeboxes here
+            <div class="social-networks">
+                Likeboxes
             </div>
         </footer>
     </div>    

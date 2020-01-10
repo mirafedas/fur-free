@@ -9,7 +9,7 @@ body {
     font-family: SegoeUI;
 }
 
-section, header {
+section, .header {
     padding-left: 10vw;
     padding-right: 10vw;
 }
@@ -18,7 +18,15 @@ button:hover {
     transform: scale(1.1) perspective(1px);
 }
 
-header {
+h2 {
+    font-size: 30px;
+}
+
+h2:hover {
+    border-bottom: 2px solid #4dc1b8;
+}
+
+.header {
     display: flex;
     height: 100px;
     padding-bottom: 5px;
@@ -26,32 +34,32 @@ header {
     background-color: #4dc1b8;
 }
 
-#menu-for-phone {
+.mobile-menu {
     display: none;
 }
 
-#header-logo {
+.header-logo {
     margin-right: 10px;
 }
 
-#header-right {
+.header-right {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-#header-right > div {
+.header-right__retailers {
     display: flex;
     flex-direction: column;
     justify-items: center;
     width: 80px;
 }
 
-#header-right > div:first-child {
+.header-right__retailers__text {
     text-align: center;
 }
 
-#retailers-number {
+.retailers-number {
     display: flex;
     align-self: center;
     align-content: center;
@@ -65,7 +73,7 @@ header {
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
-nav {
+.header-right__nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -73,23 +81,23 @@ nav {
     width: 100%;
 }
 
-nav > a {
+.header-right__nav__link {
     margin: 5px;
     color: #000000;
     font-size: 17px;
     text-decoration: none;
 }
 
-nav > a:hover {
+.header-right__nav__link:hover {
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
 }
 
-nav > a > span {
+.header-right__nav__icon {
     margin-left: 10px;
 }
 
-nav > a:last-child {
+.header-right__nav__link:last-child {
     display: flex;
     align-items: center;
     border: 2px solid #000000;
@@ -97,7 +105,7 @@ nav > a:last-child {
     padding: 5px;
 }
 
-#main-picture {
+.main-picture-section {
     display: flex;
     flex-direction: column;
     height: 600px;
@@ -107,12 +115,12 @@ nav > a:last-child {
     color: #ffffff;
 }
 
-#main-picture > h1 {
+.main-picture__heading {
     font-size: calc(26px + 2.5vw);
     font-family: 'Roboto Slab', serif;
 }
 
-#main-picture > p {
+.main-picture__text {
     align-self: flex-start;
     max-width: 35vw;
     min-width: 330px;;
@@ -120,79 +128,71 @@ nav > a:last-child {
     font-size: calc(12px + 1.5vw);
 }
 
-#learn-more-btn {
+.learn-more-btn {
     align-self: flex-start;
-    color: #ffffff;
-    border-color: #ffffff;
-    background-color: #E96A47;
-    background: linear-gradient(180deg, #F2704C 0%, #B85033 100%);
-    border-radius: 5px;
     height: 75px;
     width: 300px;
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 5px;
+    background-color: #E96A47;
+    background: linear-gradient(180deg, #F2704C 0%, #B85033 100%);
     font-size: 20px;
+    font-weight: bold;
     outline: none;
     box-shadow: none;
-    font-weight: bold;
     cursor: pointer;
 }
 
-#about-us > h2 {
+.about-us__heading {
     margin-top: 45px;
     width: 130px;
 }
 
-h2 {
-    font-size: 30px;
-}
-
-h2:hover {
-    border-bottom: 2px solid #4dc1b8;
-}
-
-#about-us-bottom {
+.about-us-bottom {
     flex-wrap: wrap;
 }
 
-#about-us-bottom > span > i {
+.about-us-bottom > span > i {
     color: #9B9B9B;
 }
 
-#about-us-bottom > span > i:last-child {
+.about-us-bottom > span > i:last-child {
     transform: rotate(90deg);
 }
 
-#about-us-bottom > span:first-of-type {
+.about-us-bottom > span:first-of-type {
     width: 230px;
 }
 
-#about-us-content {
+.about-us__content {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
-#about-us-content > p {
+.about-us__content > p {
     font-size: 24px;
     margin-top: 5px;
 }
 
-#about-us-img {
+.about-us__img {
     border-radius: 50%;
     margin-left: 20px;
 }
 
-#about-us-bottom {
+.about-us__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
 }
 
-#brands > h2 {
+.brands__heading {
     width: 115px;
 }
 
-#brands-nav {
+.brands__nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -202,7 +202,7 @@ h2:hover {
     margin-bottom: 40px;
 }
 
-#brands-nav > select {
+.brands__select {
     height: 40px;
     width: 150px;
     outline: none;
@@ -211,11 +211,11 @@ h2:hover {
     font-size: 16px;
 }
 
-#search-field-brands {
+.brands__search {
     display: flex;
 }
 
-#search-field-brands > input {
+.brands__search__input {
     height: 40px;
     border: 2px solid #4dc1b8;
     outline: none;
@@ -223,7 +223,7 @@ h2:hover {
     font-size: 16px;
 }
 
-#search-field-brands > i {
+.brands__search__icon {
     color:  #ffffff;
     background-color: #4dc1b8;
     display: flex;
@@ -234,7 +234,7 @@ h2:hover {
     cursor: pointer;
 }
 
-#brands > div > button {
+.show-more-btn {
     border: 2px solid #4dc1b8;
     outline: none;
     height: 40px;
@@ -243,12 +243,12 @@ h2:hover {
     font-size: 16px;
 }
 
-#brands > div:last-of-type {
+.brands__btn-wrapper {
     display: flex;
     justify-content: center;
 }
 
-#brands-container {
+.brands-container {
     display: flex;
     flex-wrap: wrap;
 }
@@ -269,21 +269,21 @@ h2:hover {
     width: 100%;
 }
 
-#why-without-fur {
+.why-without-fur {
     display: flex;
     flex-direction: column;
 }
 
-#why-without-fur > h2 {
+.why-without-fur__heading {
     width: 255px;
 }
 
-#why-without-fur > img {
+.why-without-fur__image {
     min-width: 330px;
     width: 100%;
 }
 
-#join-us {
+.join-us {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -295,7 +295,7 @@ h2:hover {
     color: #ffffff;
 }
 
-#join-us-btn {
+.join-us__btn {
     color: #ffffff;
     border-color: #ffffff;
     background-color: #E96A47;
@@ -310,7 +310,7 @@ h2:hover {
     cursor: pointer;
 }
 
-#contact-us {
+.contact-us {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,7 +318,7 @@ h2:hover {
     min-height: 350px;
 }
 
-#contact-us > form > div > div > input  {
+.contact-us__form__input {
     height: 40px;
     width: 450px;
     border: 2px solid #4dc1b8;
@@ -328,11 +328,11 @@ h2:hover {
     padding: 10px;
 }
 
-#contact-us > form > div > div {
+.contact-us__form__inputs-wrapper {
     margin-bottom: 20px;
 }
 
-#contact-us > form > div > textarea {
+.contact-us__form__textarea {
     height: 135px;
     width: 450px;
     border: 2px solid #4dc1b8;
@@ -342,10 +342,11 @@ h2:hover {
     padding: 10px;
 }
 
-#send-email-btn {
+.send-email-btn {
     outline: none;
     height: 40px;
     width: 210px;
+    margin: 25px;
     font-family: SegoeUI;
     font-size: 16px;
     background: linear-gradient(180deg, #F2F2F2 0%, #E4E4E4 100%);
@@ -355,43 +356,38 @@ h2:hover {
     border-radius: 4px;
 }
 
-footer {
+.footer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    margin: 0 -20px;
     background-color: #4A4A4A;
     color: #ffffff;
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
-form {
+.contact-us__form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-form > :first-child {
+.contact-us__form__inputs {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 150px;
+    margin: 0 150px;
     justify-content: center;
-    margin-right: 150px;
 }
 
-form > :first-child > div {
+.contact-us__form__inputs-wrapper {
     display: flex;
     flex-direction: column;
-    height: 160px;
     justify-content: space-between;
+    height: 160px;
 }
 
-#send-email-btn {
-    margin: 25px;
-}
-
-#social-networks {
+.social-networks {
     display: flex;
     justify-content: space-between;
 }

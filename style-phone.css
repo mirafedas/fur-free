@@ -14,15 +14,25 @@ section, header {
     padding-right: 0;
 }
 
-header {
+h2 {
+    font-size: 20px;
+}
+
+.header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 20px;
     background-color: #4dc1b8;
     height: 100px;
 }
 
-#header-right {
+.mobile-menu-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.header-right {
     display: none;
 }
 
@@ -30,7 +40,7 @@ header {
     font-size: 40px;
 }
 
-#main-picture {
+.main-picture-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +51,7 @@ header {
     height: 600px;
 }
 
-#main-picture > h1 {
+.main-picture__heading {
     width: 100%;
     height: 35px;
     text-align: center;
@@ -53,59 +63,54 @@ header {
     font-size: calc(12px + 2.5vw);
 }
 
-#main-picture > p {
-    width: 330px;
+.main-picture__text {
     align-self: center;
+    padding: 0 20px;
     font-size: 18px;
-    margin-bottom: 10px;
 }
 
-#learn-more-btn {
+.learn-more-btn {
     align-self: center;
+    height: 35px;
+    width: 200px;
+    margin-top: 260px;
     color: #ffffff;
     border-color: #ffffff;
     background-color: #E96A47;
     background: linear-gradient(180deg, #F2704C 0%, #B85033 100%);
     border-radius: 5px;
-    height: 35px;
-    width: 200px;
+    font-weight: bold;
     font-size: 16px;
     outline: none;
     box-shadow: none;
-    font-weight: bold;
     cursor: pointer;
 }
 
-#wrapper-container {
-    padding-left: 15px;
-    padding-right: 15px;
+.wrapper {
+    padding: 0 20px;
 }
 
-#about-us {
+.about-us {
     display: flex;
     flex-direction: column;
 }
 
-h2 {
-    font-size: 20px;
-}
-
-h2:hover {
-    border-bottom: 2px solid #4dc1b8;
-}
-
-#about-us > h2 {
+.about-us__heading {
     margin-top: 35px;
     margin-bottom: 0px;
     width: 90px;
 }
 
-#about-us-img {
-    border-radius: 50%;
-    margin-left: 20px;
+.about-us__content__text {
+    text-align: justify;
 }
 
-#about-us-bottom {
+.about-us__img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about-us__bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,12 +118,12 @@ h2:hover {
     height: 250px;
 }
 
-#about-us-bottom > img {
+.about-us__bottom > img {
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-#about-us-bottom > span {
+.about-us__bottom > span {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -126,62 +131,71 @@ h2:hover {
     height: 50px;
 }
 
-#about-us-bottom > span > div > i {
+.about-us__bottom > span > div > i {
     color: #9B9B9B;
 }
 
-#about-us-bottom > span > div:last-of-type > i {
+.about-us__bottom > span > div:last-of-type > i {
     transform: rotate(90deg);
 }
 
-#brands > h2 {
+.brands__heading {
     width: 80px;
 }
 
-#brands-nav {
+.brands__nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    background-color: #F2F1F1;
     height: 110px;
     margin-bottom: 40px;
+    margin: 0 -20px;
+    padding: 0 20px;
+    background-color: #F2F1F1;
 }
 
-#search-field-brands {
+.brands__select-wrapper {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-#search-field-brands > input {
+.brands__search {
+    display: flex;
+    width: 100%;
+}
+
+.brands__search__input {
     height: 40px;
-    width: 270px;
+    width: 100%;
+    padding: 0 10px;
     border: 2px solid #4dc1b8;
-    outline: none;
-    font-family: SegoeUI;
     font-size: 18px;
+    font-family: SegoeUI;
+    outline: none;
 }
 
-#search-field-brands > i {
-    color:  #ffffff;
-    background-color: #4dc1b8;
-    display: flex;
+.brands__search__icon {
+    display: flex !important;
     align-items: center;
     justify-content: center;
     height: 40px;
     width: 40px;
+    background-color: #4dc1b8;
+    color:  #ffffff;
     cursor: pointer;
 }
 
-#brands-nav > select {
+.brands__select {
     height: 40px;
-    width: 150px;
     outline: none;
     border: 2px solid #4dc1b8;
     font-family: SegoeUI;
     font-size: 16px;
 }
 
-#brands > div > button {
+.show-more-btn {
     border: 2px solid #4dc1b8;
     outline: none;
     height: 40px;
@@ -190,12 +204,12 @@ h2:hover {
     font-size: 16px;
 }
 
-#brands > div:last-of-type {
+.brands__btn-wrapper {
     display: flex;
     justify-content: center;
 }
 
-#brands-container {
+.brands-container {
     display: flex;
     flex-wrap: wrap;
 }
@@ -217,33 +231,34 @@ h2:hover {
     flex-wrap: wrap;
 }
 
-#why-without-fur > h2 {
+.why-without-fur__heading {
     width: 170px;
 }
 
-#why-without-fur > img {
+.why-without-fur__image {
     width: 100%;
 }
 
-#join-us {
+.join-us {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 -20px;
+    padding: 0 20px;
+    height: 500px;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/fox-big.png);
     background-color: #000000;
     background-size: cover;
-    height: 500px;
+    background-repeat: no-repeat;
     font-size: 24px;
     color: #ffffff;
-    padding: 10px;
-    background-repeat: no-repeat;
 }
 
-#join-us > h5 {
+.join-us__heading {
     text-align: center;
 }
 
-#join-us-btn {
+.join-us__btn {
     color: #ffffff;
     border-color: #ffffff;
     background-color: #E96A47;
@@ -257,32 +272,34 @@ h2:hover {
     font-weight: bold;
 }
 
-#contact-us {
+.contact-us {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 -20px;
+    padding: 0 20px;
     background-color: #E4E4E4;
     height: 415px;
 }
 
-#contact-us > form {
+.contact-us__form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#contact-us > form > div > div > input  {
+.contact-us__form__input {
     height: 40px;
     width: 250px;
-    border: 2px solid #4dc1b8;
-    outline: none;
-    font-family: SegoeUI;
-    font-size: 16px;
     padding: 10px;
     margin-bottom: 20px;
+    border: 2px solid #4dc1b8;
+    font-size: 16px;
+    font-family: SegoeUI;
+    outline: none;
 }
 
-#contact-us > form > div > textarea {
+.contact-us__form__textarea {
     height: 135px;
     width: 250px;
     border: 2px solid #4dc1b8;
@@ -293,7 +310,7 @@ h2:hover {
     margin-bottom: 20px;
 }
 
-#send-email-btn {
+.send-email-btn {
     outline: none;
     height: 40px;
     width: 210px;
@@ -306,26 +323,26 @@ h2:hover {
     border-radius: 4px;
 }
 
-#contact-us > form > div {
+.contact-us > form > div {
     height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#contact-us > form > div > div {
+.contact-us > form > div > div {
     display: flex;
     flex-direction: column;
     align-content: center;
 }
 
-footer {
+.footer {
     display: flex;
-    background-color: #4A4A4A;
-    color: #ffffff;
-    height: 70px;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    height: 70px;
+    padding: 0 20px;
+    margin: 0 -20px;
+    background-color: #4A4A4A;
+    color: #ffffff;
 }
