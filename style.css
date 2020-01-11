@@ -10,8 +10,7 @@ body {
 }
 
 section, .header {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding: 0 10vw;
 }
 
 button:hover {
@@ -67,10 +66,10 @@ h2:hover {
     width: 80px;
     height: 24px;
     margin-top: 10px;
-    color: #ffffff;
     background-color: #000000;
     font-size: 18px;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
 }
 
 .header-right__nav {
@@ -83,14 +82,14 @@ h2:hover {
 
 .header-right__nav__link {
     margin: 5px;
-    color: #000000;
     font-size: 17px;
     text-decoration: none;
+    color: #000000;
 }
 
 .header-right__nav__link:hover {
-    color: #ffffff;
     border-bottom: 1px solid #ffffff;
+    color: #ffffff;
 }
 
 .header-right__nav__icon {
@@ -100,9 +99,9 @@ h2:hover {
 .header-right__nav__link:last-child {
     display: flex;
     align-items: center;
+    padding: 5px;
     border: 2px solid #000000;
     border-radius: 5px;
-    padding: 5px;
 }
 
 .main-picture-section {
@@ -112,6 +111,7 @@ h2:hover {
     width: 100%;
     background-image: url(img/fox1.png);
     background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
 }
 
@@ -132,60 +132,58 @@ h2:hover {
     align-self: flex-start;
     height: 75px;
     width: 300px;
-    color: #ffffff;
     border-color: #ffffff;
     border-radius: 5px;
     background-color: #E96A47;
     background: linear-gradient(180deg, #F2704C 0%, #B85033 100%);
     font-size: 20px;
     font-weight: bold;
+    color: #ffffff;
     outline: none;
     box-shadow: none;
     cursor: pointer;
 }
 
 .about-us__heading {
-    margin-top: 45px;
     width: 130px;
+    margin-top: 45px;
 }
 
-.about-us-bottom {
+.about-us__bottom {
     flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
 }
 
-.about-us-bottom > span > i {
+.about-us__bottom > span > i {
     color: #9B9B9B;
 }
 
-.about-us-bottom > span > i:last-child {
+.about-us__bottom > span > i:last-child {
     transform: rotate(90deg);
 }
 
-.about-us-bottom > span:first-of-type {
+.about-us__bottom > span:first-of-type {
     width: 230px;
 }
 
 .about-us__content {
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
-.about-us__content > p {
-    font-size: 24px;
+.about-us__content__text {
     margin-top: 5px;
+    font-size: 24px;
+    text-align: justify;
 }
 
 .about-us__img {
+    max-height: 300px;
+    margin-left: 30px;
     border-radius: 50%;
-    margin-left: 20px;
-}
-
-.about-us__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
 }
 
 .brands__heading {
@@ -197,18 +195,18 @@ h2:hover {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #F2F1F1;
     height: 110px;
     margin-bottom: 40px;
+    background-color: #F2F1F1;
 }
 
 .brands__select {
     height: 40px;
     width: 150px;
-    outline: none;
     border: 2px solid #4dc1b8;
     font-family: SegoeUI;
     font-size: 16px;
+    outline: none;
 }
 
 .brands__search {
@@ -218,29 +216,29 @@ h2:hover {
 .brands__search__input {
     height: 40px;
     border: 2px solid #4dc1b8;
-    outline: none;
     font-family: SegoeUI;
     font-size: 16px;
+    outline: none;
 }
 
 .brands__search__icon {
-    color:  #ffffff;
-    background-color: #4dc1b8;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     height: 40px;
     width: 40px;
+    background-color: #4dc1b8;
+    color:  #ffffff;
     cursor: pointer;
 }
 
 .show-more-btn {
-    border: 2px solid #4dc1b8;
-    outline: none;
     height: 40px;
     width: 150px;
+    border: 2px solid #4dc1b8;
     font-family: SegoeUI;
     font-size: 16px;
+    outline: none;
 }
 
 .brands__btn-wrapper {
@@ -254,12 +252,12 @@ h2:hover {
 }
 
 .brand-logo {
+    flex: 1;
     max-width: 180px;
     max-height: 180px;
     min-width: 160px;
     min-height: 160px;
     margin-bottom: 40px;
-    flex: 1;
     margin: 10px;
 }
 
@@ -288,25 +286,25 @@ h2:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 500px;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/fox.png);
     background-size: cover;
-    height: 500px;
     font-size: 24px;
     color: #ffffff;
 }
 
 .join-us__btn {
-    color: #ffffff;
+    height: 75px;
+    width: 300px;
     border-color: #ffffff;
     background-color: #E96A47;
     background: linear-gradient(180deg, #F2704C 0%, #B85033 100%);
     border-radius: 5px;
-    height: 75px;
-    width: 300px;
     font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
     outline: none;
     box-shadow: none;
-    font-weight: bold;
     cursor: pointer;
 }
 
@@ -314,18 +312,18 @@ h2:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E4E4E4;
     min-height: 350px;
+    background-color: #E4E4E4;
 }
 
 .contact-us__form__input {
     height: 40px;
     width: 450px;
+    padding: 10px;
     border: 2px solid #4dc1b8;
-    outline: none;
     font-family: SegoeUI;
     font-size: 16px;
-    padding: 10px;
+    outline: none;
 }
 
 .contact-us__form__inputs-wrapper {
@@ -335,25 +333,25 @@ h2:hover {
 .contact-us__form__textarea {
     height: 135px;
     width: 450px;
+    padding: 10px;
     border: 2px solid #4dc1b8;
-    outline: none;
     font-family: SegoeUI;
     font-size: 16px;
-    padding: 10px;
+    outline: none;
 }
 
 .send-email-btn {
-    outline: none;
     height: 40px;
     width: 210px;
     margin: 25px;
-    font-family: SegoeUI;
-    font-size: 16px;
     background: linear-gradient(180deg, #F2F2F2 0%, #E4E4E4 100%);
     border: 1px solid #4DC0B8;
+    border-radius: 4px;
     box-sizing: border-box;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.195772), inset 0px 2px 0px #FFFFFF;
-    border-radius: 4px;
+    font-family: SegoeUI;
+    font-size: 16px;
+    outline: none;
 }
 
 .footer {
@@ -362,7 +360,6 @@ h2:hover {
     align-items: center;
     height: 70px;
     padding: 0 20px;
-    margin: 0 -20px;
     background-color: #4A4A4A;
     color: #ffffff;
 }
@@ -376,8 +373,9 @@ h2:hover {
 .contact-us__form__inputs {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 150px;
     justify-content: center;
+    flex-direction: column;
+    margin: 0 150px;
 }
 
 .contact-us__form__inputs-wrapper {
